@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Modal from "react-modal";
-import Box from "@mui/material/Box";
 import anjuImage from "/anju.jpeg?url";
 import fujiImage from "/fuji.jpeg?url";
 import gyukakuImage from "/gyukaku.jpeg?url";
@@ -81,8 +80,7 @@ export default function Page() {
           <div className="my-4 text-4xl font-bold">
             Oh yeah! Oh yeah! I love you peanut!!
           </div>
-          <Box
-            component="img"
+          <img
             src={cakeImage}
             style={{
               width: "250px",
@@ -174,8 +172,7 @@ export default function Page() {
           </p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             {anniversaryDate[noCount - 1].images.map((image) => (
-              <Box
-                component="img"
+              <img
                 src={image}
                 style={{
                   width: "150px",
